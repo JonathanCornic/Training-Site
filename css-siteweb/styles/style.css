@@ -94,5 +94,165 @@ body {
     margin: 0 20px;
   }
 }
+.titresec1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
 
-/*# sourceMappingURL=style.css.map */
+.txtimg {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px dashed lightskyblue;
+}
+.txtimg .flexcontainersection1 {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+.txtimg .flexcontainersection1 .contimgsec1 {
+  width: 45%;
+  margin: 20px;
+}
+.txtimg .flexcontainersection1 .contimgsec1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+.txtimg .flexcontainersection1 .conttxtsec1 {
+  width: 45%;
+  background: azure;
+  margin: 20px;
+  border-radius: 2px;
+}
+.txtimg .flexcontainersection1 .conttxtsec1 h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.txtimg .flexcontainersection1 .conttxtsec1 .soustitresec1 {
+  text-align: center;
+}
+.txtimg .flexcontainersection1 .conttxtsec1 hr {
+  width: 60px;
+}
+.txtimg .flexcontainersection1 .conttxtsec1 .txtsec1 {
+  font-size: 19px;
+  padding: 15px;
+}
+.txtimg .flexcontainersection1 .conttxtsec1 .txtsec1::first-letter {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .txtimg .flexcontainersection1 {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  .txtimg .flexcontainersection1 .contimgsec1 {
+    width: 100%;
+  }
+  .txtimg .flexcontainersection1 .conttxtsec1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titresec1 {
+    font-size: 25px;
+  }
+}
+.titreportfolio {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .titreportfolio {
+    font-size: 25px;
+  }
+}
+.diviseurport {
+  width: 20%;
+}
+
+.portfolioimg {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.portfolioimg .fleximgportfolio {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolioimg .fleximgportfolio .imgport {
+  width: 300px;
+  margin: 20px;
+  height: 370px;
+  overflow: hidden;
+}
+.portfolioimg .fleximgportfolio .imgport img {
+  width: 100%;
+  height: auto;
+}
+
+.parascroll {
+  width: 100%;
+  height: 300px;
+  background: url("../ressources/para.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parascroll h3 {
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.titreform {
+  text-align: center;
+}
+
+.formulaire {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formulaire form {
+  width: 60%;
+}
+.formulaire form .row {
+  width: 100%;
+}
+.formulaire form .row input, .formulaire form .row textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.formulaire form .row textarea {
+  height: 150px;
+}
+.formulaire form .row .subbtn {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.formulaire form .row .subbtn:hover {
+  background: midnightblue;
+  color: #f1f1f1;
+}/*# sourceMappingURL=style.css.map */
