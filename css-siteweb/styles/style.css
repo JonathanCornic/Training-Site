@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  width: 100%;
 }
 
 .navbar {
@@ -19,21 +20,58 @@ body {
   position: fixed;
   z-index: 100;
 }
-.navbar .contitems {
+
+.contitems {
   font-size: 22px;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.navbar .contitems .items {
+
+.items {
   margin-right: 30px;
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
-.navbar .contitems .items:hover {
+
+.items:hover {
   color: #5f5f5f;
 }
 
+.logomenuimg {
+  width: 30px;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  .logomenuimg {
+    display: block;
+  }
+  .navbar {
+    display: block;
+  }
+  .items:nth-child(1) {
+    padding-top: 20px;
+  }
+  .items {
+    background: #f5f5f5;
+    margin-right: 0;
+    padding: 10px 20px;
+    display: block;
+  }
+  .contitems {
+    display: none;
+    border-top: 1px solid black;
+  }
+  .responsive {
+    display: block;
+    margin-top: 50px;
+  }
+}
 .accueil {
   height: 800px;
   width: 100%;
@@ -222,6 +260,7 @@ body {
 
 .titreform {
   text-align: center;
+  padding-top: 50px;
 }
 
 .formulaire {
@@ -255,4 +294,13 @@ body {
 .formulaire form .row .subbtn:hover {
   background: midnightblue;
   color: #f1f1f1;
+}
+.formulaire form .row:nth-child(2), .formulaire form .row:nth-child(3) {
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed #333;
 }/*# sourceMappingURL=style.css.map */
